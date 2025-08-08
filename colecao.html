@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maria Elegance - Coleção Completa</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="site_header">
+    <div id="logo">
+      <h1 id="startheader">Maria Elegance</h1>
+    </div>
+
+    <button id="menuhamburguer" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="linhadenav">
+      <a href="index.html#colecao"><h2>Coleção</h2></a>
+      <a href="index.html#sobre"><h2>Sobre</h2></a>
+      <a href="index.html#contato"><h2>Contato</h2></a>
+      <a href="index.html#contato" id="fimheader"><h2 class="laranja">Fale Conosco</h2></a>
+    </nav>
+  </header>
+
+  <main class="container" style="padding: 2rem 0;">
+    <section>
+      <div class="section_header">
+        <h2>Todos os produtos</h2>
+        <p>Visualize a coleção completa da Maria Elegance.</p>
+      </div>
+
+      <div class="grid_cards">
+        <!-- Containers de produtos vazios -->
+        <div class="card_roupa">
+          <div class="card_imgwrap">
+            <!-- <img src="produto1.jpg" alt="Produto"> -->
+          </div>
+          <div class="card_body">
+            <h3>Produto 1</h3>
+            <p class="desc">Descrição breve</p>
+          </div>
+        </div>
+
+        <div class="card_roupa">
+          <div class="card_imgwrap">
+            <!-- <img src="produto2.jpg" alt="Produto"> -->
+          </div>
+          <div class="card_body">
+            <h3>Produto 2</h3>
+            <p class="desc">Descrição breve</p>
+          </div>
+        </div>
+
+        <div class="card_roupa">
+          <div class="card_imgwrap">
+            <!-- <img src="produto3.jpg" alt="Produto"> -->
+          </div>
+          <div class="card_body">
+            <h3>Produto 3</h3>
+            <p class="desc">Descrição breve</p>
+          </div>
+        </div>
+
+        <!-- Adicione quantos containers desejar -->
+      </div>
+    </section>
+  </main>
+
+  <footer id="site_footer">
+    <section class="colunasrodape container">
+      <div class="coluna">
+        <h3>Maria Elegance</h3>
+        <p>Moda feminina — peças selecionadas com carinho.</p>
+      </div>
+      <div class="coluna">
+        <h3>Links</h3>
+        <a href="index.html#colecao">Coleção</a><br>
+        <a href="index.html#sobre">Sobre</a><br>
+        <a href="index.html#contato">Contato</a>
+      </div>
+      <div class="coluna">
+        <h3>Contato</h3>
+        <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+        <p><a href="mailto:contato@mariaelegance.com.br">contato@mariaelegance.com.br</a></p>
+      </div>
+    </section>
+    <section id="direitos" class="container">
+      <span id="regua"></span>
+      <p>&copy; Maria Elegance — Todos os direitos reservados.</p>
+    </section>
+  </footer>
+
+  <script>
+    (function () {
+      const btn = document.getElementById('menuhamburguer');
+      const nav = document.getElementById('linhadenav');
+      btn.addEventListener('click', () => nav.classList.toggle('open'));
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maria Elegance</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="site_header">
+    <div id="logo">
+      <!-- Logo aqui -->
+      <h1 id="startheader">Maria Elegance</h1>
+    </div>
+
+    <button id="menuhamburguer" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="linhadenav" aria-label="Navegação principal">
+      <a href="#colecao" class="sublinhado"><h2>Coleção</h2></a>
+      <a href="#sobre" class="sublinhado"><h2>Sobre</h2></a>
+      <a href="#contato" class="sublinhado"><h2>Contato</h2></a>
+      <a href="#contato" id="fimheader"><h2 class="laranja">Fale Conosco</h2></a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="banner_home" class="container" aria-labelledby="hero_title">
+      <div class="banner_content">
+        <h2 id="hero_title">Elegância que conta histórias</h2>
+        <p>Peças atemporais — vestidos e looks femininos com acabamento cuidadoso e caimento perfeito.</p>
+        <div class="banner_ctas">
+          <a href="#colecao" class="btn_primary">Ver Coleção</a>
+          <a href="#sobre" class="btn_outline">Nossa História</a>
+        </div>
+      </div>
+      <figure class="banner_image" aria-hidden="true">
+        <!-- Imagem do banner -->
+      </figure>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section id="categorias" class="container">
+      <h2>Explore por categorias</h2>
+      <div class="categories_grid">
+        <article class="categoria_card"><h3>Vestidos</h3></article>
+        <article class="categoria_card"><h3>Blusas</h3></article>
+        <article class="categoria_card"><h3>Saias</h3></article>
+      </div>
+    </section>
+
+
+<!-- COLEÇÃO -->
+<section id="colecao" class="container">
+  <div class="section_header">
+    <h2>Nova Coleção</h2>
+    <p>Descubra as peças mais elegantes da temporada</p>
+  </div>
+
+  <div class="carousel_scroll">
+    <div class="carousel_container">
+      <div class="card_roupa">
+        <div class="card_imgwrap">
+          <!-- <img src="imagem1.jpg" alt="Produto 1"> -->
+        </div>
+        <div class="card_body">
+          <h3>Produto 1</h3>
+          <p class="desc">Descrição breve do produto</p>
+        </div>
+      </div>
+
+      <div class="card_roupa">
+        <div class="card_imgwrap">
+          <!-- <img src="imagem2.jpg" alt="Produto 2"> -->
+        </div>
+        <div class="card_body">
+          <h3>Produto 2</h3>
+          <p class="desc">Descrição breve do produto</p>
+        </div>
+      </div>
+
+      <div class="card_roupa">
+        <div class="card_imgwrap">
+          <!-- <img src="imagem3.jpg" alt="Produto 3"> -->
+        </div>
+        <div class="card_body">
+          <h3>Produto 3</h3>
+          <p class="desc">Descrição breve do produto</p>
+        </div>
+      </div>
+
+      <!-- Adicione mais cards se quiser -->
+    </div>
+  </div>
+
+  <div class="see_more_wrap">
+    <a href="colecao.html" class="btn_outline">Ver todos os produtos</a>
+  </div>
+</section>
+
+
+
+    <!-- SOBRE -->
+    <section id="sobre" class="container">
+      <div class="about_grid">
+        <figure class="about_img">
+          <!-- Imagem equipe -->
+        </figure>
+        <div class="about_text">
+          <h2>Sobre a Maria Elegance</h2>
+          <p>Maria Elegance nasceu do desejo de oferecer peças que tragam confiança e sofisticação. Trabalhamos com pequenas produções e atenção ao acabamento para que cada cliente sinta-se única.</p>
+          <ul class="valores_list">
+            <li><strong>Qualidade:</strong> atenção aos detalhes</li>
+            <li><strong>Atendimento:</strong> contato direto e personalizado</li>
+            <li><strong>Sustentabilidade:</strong> coleções sem desperdício</li>
+          </ul>
+          <a href="#contato" class="btn_primary">Entrar em contato</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="container">
+      <div class="contato_grid">
+        <div class="contato_info">
+          <h2>Fale com a Maria</h2>
+          <p>Atendimento via WhatsApp, e-mail ou redes sociais. Sem loja física — encomendas por contato.</p>
+          <ul>
+            <li><strong>WhatsApp:</strong> <a href="tel:+5511999999999">(11) 99999-9999</a></li>
+            <li><strong>E-mail:</strong> <a href="mailto:contato@mariaelegance.com.br">contato@mariaelegance.com.br</a></li>
+            <li><strong>Instagram:</strong> <a href="#">@mariaelegance</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site_footer">
+    <section class="colunasrodape container">
+      <div class="coluna">
+        <h3>Maria Elegance</h3>
+        <p>Moda feminina — peças selecionadas com carinho.</p>
+      </div>
+
+      <div class="coluna">
+        <h3>Links</h3>
+        <a href="#colecao">Coleção</a><br>
+        <a href="#sobre">Sobre</a><br>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <div class="coluna">
+        <h3>Contato</h3>
+        <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+        <p><a href="mailto:contato@mariaelegance.com.br">contato@mariaelegance.com.br</a></p>
+      </div>
+    </section>
+
+    <section id="direitos" class="container">
+      <span id="regua"></span>
+      <p>&copy; Maria Elegance — Todos os direitos reservados.</p>
+    </section>
+  </footer>
+
+  <script>
+    (function () {
+      const btn = document.getElementById('menuhamburguer');
+      const nav = document.getElementById('linhadenav');
+      btn.addEventListener('click', () => nav.classList.toggle('open'));
+    })();
+  </script>
+</body>
+</html>
