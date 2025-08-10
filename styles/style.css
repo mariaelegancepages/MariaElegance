@@ -10,7 +10,6 @@
   --muted: #6b7280;
 }
 
-/* Reset / base */
 * { box-sizing: border-box; }
 html,body { height:100%; overflow-x: hidden; }
 body {
@@ -21,20 +20,17 @@ body {
   background: linear-gradient(180deg, #fff 0%, #fff 30%, var(--cor_secundaria) 100%);
   line-height:1.5;
   font-size:16px;
-  overflow-x: hidden;  /* 🔒 trava qualquer transbordamento lateral */
+  overflow-x: hidden; 
 }
 
-
-/* Container utility */
 .container {
   max-width: var(--container-max);
-  width: 80%;              /* largura reduzida para evitar conteúdo grudado */
+  width: 80%;            
   margin: 0 auto;
   padding: 0 1rem;
   box-sizing: border-box;
 }
 
-/* Header */
 #site_header {
   display:flex;
   align-items:center;
@@ -58,7 +54,6 @@ body {
   align-items:center;
 }
 
-/* Mobile menu button */
 #menuhamburguer{
   display:inline-grid;
   grid-template-rows:repeat(3,3px);
@@ -71,14 +66,15 @@ body {
   cursor:pointer;
   z-index: 100;
 }
-#menuhamburguer span{ background:var(--cor_neutra); display:block; border-radius:3px; height:3px; }
 
-/* nav links */
+#menuhamburguer span { 
+  background:var(--cor_neutra); display:block; border-radius:3px; height:3px; 
+}
+
 #linhadenav a { text-decoration:none; color:var(--cor_neutra); display:inline-flex; align-items:center; }
 #linhadenav h2 { margin:0; font-size:0.95rem; font-weight:600; letter-spacing:0.2px; }
 .laranja { background:var(--cor_principal); color:#fff; padding:0.3rem 0.6rem; border-radius:0.5rem; }
 
-/* HERO */
 #banner_home {
   display:flex;
   flex-direction:column;
@@ -87,9 +83,18 @@ body {
   align-items:center;
   text-align:center;
 }
-.banner_content { max-width:44rem; }
-#hero_title { font-family: "Playfair Display", serif; font-size:1.75rem; margin:0 0 0.5rem 0; color:var(--cor_neutra); }
-.banner_content p { margin:0 0 1rem 0; color:var(--muted); }
+
+.banner_content { 
+  max-width: 44rem; 
+}
+#hero_title { 
+  font-family: "Playfair Display", serif; font-size:1.75rem; margin:0 0 0.5rem 0; color:var(--cor_neutra); 
+}
+
+.banner_content p { 
+  margin:0 0 1rem 0; color:var(--muted); 
+}
+
 .banner_image img {
   width:100%;
   max-width:520px;
@@ -99,7 +104,6 @@ body {
   margin:0 auto;
 }
 
-/* CTA buttons */
 .btn_primary, .btn_outline {
   display:inline-block;
   padding:0.65rem 1rem;
@@ -108,13 +112,24 @@ body {
   font-weight:600;
   transition:transform .18s ease, box-shadow .18s ease;
 }
-.btn_primary { background:var(--cor_principal); color:#fff; border:2px solid var(--cor_principal); }
-.btn_primary:hover{ transform:translateY(-4px); box-shadow:0 10px 30px rgba(185,28,111,0.12); }
-.btn_outline { background:transparent; color:var(--cor_principal); border:2px solid var(--cor_principal); }
+
+.btn_primary { 
+  background:var(--cor_principal); color:#fff; border:2px solid var(--cor_principal); 
+}
+
+.btn_primary:hover { 
+  transform:translateY(-4px); box-shadow:0 10px 30px rgba(185,28,111,0.12); 
+}
+.btn_outline { 
+  background:transparent; color:var(--cor_principal); border:2px solid var(--cor_principal); 
+}
+
 .btn_outline:hover{ transform:translateY(-4px); }
 
-/* CATEGORIES */
-#categorias { padding:1.25rem 0 0; }
+#categorias { 
+  padding:1.25rem 0 0; 
+}
+
 .categories_grid {
   display: flex;
   gap: 1rem;
@@ -122,10 +137,10 @@ body {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
   scroll-behavior: smooth;
-  /* evita overflow extra */
   max-width: 100%;
   box-sizing: border-box;
 }
+
 .categoria_card{
   min-width: 11rem;
   flex: 0 0 auto;
@@ -136,9 +151,11 @@ body {
   text-align:center;
   padding:0.5rem;
 }
-.categoria_card img { width:100%; height:8.5rem; object-fit:cover; border-radius:0.5rem; }
 
-/* COLLECTION CARDS */
+.categoria_card img { 
+  width:100%; height:8.5rem; object-fit:cover; border-radius:0.5rem; 
+}
+
 #colecao { padding:1.5rem 0; }
 .section_header { text-align:center; margin-bottom:1rem; color:var(--muted); }
 .grid_cards {
@@ -146,6 +163,7 @@ body {
   grid-template-columns:repeat(1,1fr);
   gap:1rem;
 }
+
 .card_roupa {
   background:#fff;
   border-radius:0.85rem;
@@ -154,6 +172,7 @@ body {
   display:flex;
   flex-direction:column;
 }
+
 .card_imgwrap img { width:100%; height:280px; object-fit:cover; display:block; }
 .card_body { padding:0.9rem; display:flex; flex-direction:column; gap:0.5rem; }
 .card_body h3 { margin:0; font-size:1.05rem; }
@@ -161,13 +180,10 @@ body {
 .card_body .preco { color:var(--cor_principal); font-weight:700; margin:0; }
 .card_actions { display:flex; gap:0.5rem; margin-top:0.5rem; }
 
-/* small modifier */
 .btn_primary.small, .btn_outline.small { padding:0.45rem 0.7rem; font-size:0.9rem; border-radius:0.6rem; }
 
-/* See more wrapper */
 .see_more_wrap { text-align:center; margin-top:1rem; }
 
-/* ABOUT */
 #sobre { padding:1.5rem 0; }
 .about_grid {
   display: flex !important;
@@ -191,7 +207,6 @@ body {
 .valores_list { list-style:none; padding:0; margin:0.8rem 0 1rem 0; color:var(--muted); }
 .valores_list li { margin-bottom:0.5rem; }
 
-/* NEWSLETTER */
 #newsletter_home { padding:1.3rem 0; text-align:center; }
 .newsletter_form { 
   display:flex; 
@@ -208,6 +223,7 @@ body {
   max-width:360px; 
   flex-grow: 1;
 }
+
 .newsletter_form button { 
   border-radius:999px; 
   padding:0.68rem 1rem; 
@@ -218,7 +234,6 @@ body {
   min-width: 130px;
 }
 
-/* CONTACT */
 #contato { padding:1.5rem 0; }
 .contato_grid { 
   display:flex; 
@@ -229,6 +244,7 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
+
 .contato_info { 
   background:#fff; 
   padding:1rem; 
@@ -237,6 +253,7 @@ body {
   width: 100%;
   text-align: center;
 }
+
 .contato_form { 
   display:flex; 
   flex-direction:column; 
@@ -246,16 +263,17 @@ body {
   border-radius:0.8rem; 
   box-shadow:var(--shadow); 
 }
+
 .contato_form input, .contato_form textarea {
   padding:0.7rem;
   border:1px solid rgba(0,0,0,0.06);
   border-radius:0.5rem;
   resize:vertical;
 }
+
 .contato_form label { font-size:0.9rem; color:var(--muted); }
 .contato_form button { border:0; padding:0.8rem; border-radius:0.6rem; background:var(--cor_principal); color:#fff; margin-top:0.3rem; }
 
-/* Footer - reformulado */
 #site_footer {
   background: var(--cor_principal);
   color: white;
@@ -295,13 +313,11 @@ body {
   text-decoration: underline;
 }
 
-/* Footer links vertical no mobile */
 .colunasrodape a {
   display: inline-block;
   margin: 0.15rem 0;
 }
 
-/* Direitos */
 #direitos {
   text-align: center;
   margin-top: 1.5rem;
@@ -316,13 +332,13 @@ body {
 /* Mobile */
 @media (max-width: 699px) {
   .container {
-    width: 90%; /* Largura um pouco maior no mobile */
+    width: 90%;
   }
   #linhadenav {
     display: none;
     flex-direction: column;
     position: fixed;
-    top: 60px; /* abaixo do header */
+    top: 60px;
     right: 0;
     background: var(--cor_terciaria);
     width: 200px;
@@ -346,7 +362,6 @@ body {
     font-size: 1.1rem;
   }
 
-  /* Categorias no mobile */
   .categories_grid {
     overflow-x: auto;
     max-width: 100%;
@@ -354,7 +369,6 @@ body {
   }
 }
 
-/* Desktop a partir de 700px */
 @media (min-width: 700px) {
   .container {
     width: 80%;
@@ -379,7 +393,6 @@ body {
     font-size: 0.95rem;
   }
 
-  /* Banner */
   #banner_home { 
     flex-direction: row; 
     align-items: center; 
@@ -390,7 +403,6 @@ body {
   .banner_content { flex: 1; margin-bottom: 0; }
   .banner_image { flex: 1; }
 
-  /* Categorias - grid */
   .categories_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -402,12 +414,10 @@ body {
     flex: none;
   }
 
-  /* Coleção - grid 2 colunas */
   .grid_cards {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Sobre */
   .about_grid {
     flex-direction: row;
     align-items: flex-start;
@@ -417,7 +427,6 @@ body {
     max-width: 50%;
   }
 
-  /* Newsletter */
   .newsletter_form {
     flex-wrap: nowrap;
     justify-content: center;
@@ -431,7 +440,6 @@ body {
     flex-shrink: 0;
   }
 
-  /* Contato - grid e centralização */
   .contato_grid {
     display: flex;
     flex-direction: row;
@@ -447,7 +455,6 @@ body {
     width: 100%;
   }
 
-  /* Footer - grid */
   .colunasrodape {
     flex-direction: row;
     justify-content: space-between;
@@ -458,7 +465,6 @@ body {
     text-align: left;
   }
 
-  /* Ajustes de fontes */
   #startheader {
     font-size: 1.3rem;
   }
@@ -486,7 +492,6 @@ body {
   }
 }
 
-/* Hover pequeno nas cards */
 .card_roupa:hover { 
   transform: translateY(-6px); 
   transition: transform .22s cubic-bezier(.2,.9,.2,1); 
@@ -499,8 +504,8 @@ body {
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
 
-  max-width: 100%;        /* 🔥 impede que ultrapasse a tela */
-  overflow-y: hidden;     /* garante que não cause scroll vertical */
+  max-width: 100%;     
+  overflow-y: hidden; 
 }
 
 .carousel_container {
@@ -508,7 +513,7 @@ body {
   gap: 1rem;
   scroll-snap-align: start;
 
-  max-width: 100%;       /* 🔥 limita dentro do container pai */
+  max-width: 100%;      
   box-sizing: border-box;
 }
 
@@ -576,7 +581,7 @@ body {
   margin-bottom: 1.5rem;
 
   display: flex;
-  justify-content: center; /* 🔥 Isso centraliza o carrossel */
+  justify-content: center;
 }
 
 /* --- Página Coleção - Grid e Cards --- */
