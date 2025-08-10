@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Maria Elegance</title>
+  <title>Maria Elegance - Costureira</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +12,7 @@
 <body>
   <header id="site_header">
     <div id="logo">
-      <!-- Logo aqui -->
-      <h1 id="startheader">Maria Elegance</h1>
+      <img src="assets/logotransparentemariaelegance.png" alt="Logo Maria Elegance" style="height: 80px;">
     </div>
 
     <button id="menuhamburguer" aria-label="Abrir menu">
@@ -23,7 +22,6 @@
     <nav id="linhadenav" aria-label="Navegação principal">
       <a href="#colecao" class="sublinhado"><h2>Coleção</h2></a>
       <a href="#sobre" class="sublinhado"><h2>Sobre</h2></a>
-      <a href="#contato" class="sublinhado"><h2>Contato</h2></a>
       <a href="#contato" id="fimheader"><h2 class="laranja">Fale Conosco</h2></a>
     </nav>
   </header>
@@ -32,10 +30,10 @@
     <!-- HERO -->
     <section id="banner_home" class="container" aria-labelledby="hero_title">
       <div class="banner_content">
-        <h2 id="hero_title">Elegância que conta histórias</h2>
-        <p>Peças atemporais — vestidos e looks femininos com acabamento cuidadoso e caimento perfeito.</p>
+        <h2 id="hero_title">Costura sob medida com elegância</h2>
+        <p>Confecção e ajustes de vestidos, peças femininas e roupas personalizadas, com acabamento impecável e atenção a cada detalhe.</p>
         <div class="banner_ctas">
-          <a href="#colecao" class="btn_primary">Ver Coleção</a>
+          <a href="#colecao" class="btn_primary">Ver Trabalhos</a>
           <a href="#sobre" class="btn_outline">Nossa História</a>
         </div>
       </div>
@@ -46,64 +44,59 @@
 
     <!-- CATEGORIAS -->
     <section id="categorias" class="container">
-      <h2>Explore por categorias</h2>
+      <h2>Serviços e Categorias</h2>
       <div class="categories_grid">
-        <article class="categoria_card"><h3>Vestidos</h3></article>
-        <article class="categoria_card"><h3>Blusas</h3></article>
-        <article class="categoria_card"><h3>Saias</h3></article>
+        <article class="categoria_card"><h3>Vestidos sob medida</h3></article>
+        <article class="categoria_card"><h3>Ajustes e reformas</h3></article>
+        <article class="categoria_card"><h3>Peças exclusivas</h3></article>
       </div>
     </section>
 
+    <!-- COLEÇÃO -->
+    <section id="colecao" class="container">
+      <div class="section_header">
+        <h2>Alguns de nossos trabalhos</h2>
+        <p>Peças únicas criadas e finalizadas manualmente para cada cliente</p>
+      </div>
 
-<!-- COLEÇÃO -->
-<section id="colecao" class="container">
-  <div class="section_header">
-    <h2>Nova Coleção</h2>
-    <p>Descubra as peças mais elegantes da temporada</p>
-  </div>
+      <div class="carousel_scroll">
+        <div class="carousel_container">
+          <div class="card_roupa">
+            <div class="card_imgwrap">
+              <img src="assets/mariaeleganceimg1.jpg" alt="Detalhe de costura delicada em vestido de festa">
+            </div>
+            <div class="card_body">
+              <h3>Vestido de festa</h3>
+              <p class="desc">Acabamento e detalhes de costura sob medida em tecido de alta qualidade.</p>
+            </div>
+          </div>
 
-  <div class="carousel_scroll">
-    <div class="carousel_container">
-      <div class="card_roupa">
-        <div class="card_imgwrap">
-          <!-- <img src="imagem1.jpg" alt="Produto 1"> -->
-        </div>
-        <div class="card_body">
-          <h3>Produto 1</h3>
-          <p class="desc">Descrição breve do produto</p>
+          <div class="card_roupa">
+            <div class="card_imgwrap">
+              <img src="assets/mariaeleganceimg2.jpg" alt="Peça de roupa costurada artesanalmente">
+            </div>
+            <div class="card_body">
+              <h3>Blusa de seda</h3>
+              <p class="desc">Peça artesanal, com corte delicado e acabamento profissional.</p>
+            </div>
+          </div>
+
+          <div class="card_roupa">
+            <div class="card_imgwrap">
+              <img src="assets/mariaeleganceimg3.jpg" alt="Conjunto de couro tamanho G">
+            </div>
+            <div class="card_body">
+              <h3>Conjunto de couro</h3>
+              <p class="desc">Conjunto de couro tamanho G por R$ 129,00.</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="card_roupa">
-        <div class="card_imgwrap">
-          <!-- <img src="imagem2.jpg" alt="Produto 2"> -->
-        </div>
-        <div class="card_body">
-          <h3>Produto 2</h3>
-          <p class="desc">Descrição breve do produto</p>
-        </div>
+      <div class="see_more_wrap">
+        <a href="colecao.html" class="btn_outline">Ver mais trabalhos</a>
       </div>
-
-      <div class="card_roupa">
-        <div class="card_imgwrap">
-          <!-- <img src="imagem3.jpg" alt="Produto 3"> -->
-        </div>
-        <div class="card_body">
-          <h3>Produto 3</h3>
-          <p class="desc">Descrição breve do produto</p>
-        </div>
-      </div>
-
-      <!-- Adicione mais cards se quiser -->
-    </div>
-  </div>
-
-  <div class="see_more_wrap">
-    <a href="colecao.html" class="btn_outline">Ver todos os produtos</a>
-  </div>
-</section>
-
-
+    </section>
 
     <!-- SOBRE -->
     <section id="sobre" class="container">
@@ -113,13 +106,13 @@
         </figure>
         <div class="about_text">
           <h2>Sobre a Maria Elegance</h2>
-          <p>Maria Elegance nasceu do desejo de oferecer peças que tragam confiança e sofisticação. Trabalhamos com pequenas produções e atenção ao acabamento para que cada cliente sinta-se única.</p>
+          <p>Com anos de experiência na costura e modelagem, Maria Elegance cria peças únicas que refletem o estilo e a personalidade de cada cliente. Trabalhamos com confecção sob medida, ajustes e reformas, sempre priorizando qualidade e acabamento.</p>
           <ul class="valores_list">
-            <li><strong>Qualidade:</strong> atenção aos detalhes</li>
+            <li><strong>Qualidade:</strong> atenção aos mínimos detalhes</li>
             <li><strong>Atendimento:</strong> contato direto e personalizado</li>
-            <li><strong>Sustentabilidade:</strong> coleções sem desperdício</li>
+            <li><strong>Exclusividade:</strong> peças únicas para cada cliente</li>
           </ul>
-          <a href="#contato" class="btn_primary">Entrar em contato</a>
+          <a href="#contato" class="btn_primary">Solicitar orçamento</a>
         </div>
       </div>
     </section>
@@ -129,13 +122,18 @@
       <div class="contato_grid">
         <div class="contato_info">
           <h2>Fale com a Maria</h2>
-          <p>Atendimento via WhatsApp, e-mail ou redes sociais. Sem loja física — encomendas por contato.</p>
+          <p>Atendimento via WhatsApp ou Instagram. Trabalhamos com encomendas personalizadas.</p>
           <ul>
-            <li><strong>WhatsApp:</strong> <a href="tel:+5511999999999">(11) 99999-9999</a></li>
-            <li><strong>E-mail:</strong> <a href="mailto:contato@mariaelegance.com.br">contato@mariaelegance.com.br</a></li>
-            <li><strong>Instagram:</strong> <a href="#">@mariaelegance</a></li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/5519991003462" target="_blank">(19) 99100-3462</a></li>
+            <li><strong>Instagram:</strong> <a href="https://instagram.com/mariaelegancecostureira" target="_blank">@mariaelegancecostureira</a></li>
           </ul>
         </div>
+          <div class="contato_mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.6334562169656!2d-47.703653224735875!3d-22.724624530556756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cf04ef9872bf%3A0x6a6ef849d7e998bb!2sR.%20Aracaj%C3%BA%2C%2020%20-%20Jardim%20Parque%20Jupia%2C%20Piracicaba%20-%20SP%2C%2013403-317!5e0!3m2!1spt-BR!2sbr!4v1723307559332!5m2!1spt-BR!2sbr"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
       </div>
     </section>
   </main>
@@ -144,20 +142,20 @@
     <section class="colunasrodape container">
       <div class="coluna">
         <h3>Maria Elegance</h3>
-        <p>Moda feminina — peças selecionadas com carinho.</p>
+        <p>Costura sob medida e peças exclusivas feitas com carinho.</p>
       </div>
 
       <div class="coluna">
         <h3>Links</h3>
         <a href="#colecao">Coleção</a><br>
         <a href="#sobre">Sobre</a><br>
-        <a href="#contato">Contato</a>
+        <a href="#contato">Fale Conosco</a>
       </div>
 
       <div class="coluna">
         <h3>Contato</h3>
-        <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
-        <p><a href="mailto:contato@mariaelegance.com.br">contato@mariaelegance.com.br</a></p>
+        <p><a href="https://wa.me/5519991003462" target="_blank">(19) 99100-3462</a></p>
+        <p><a href="https://instagram.com/mariaelegancecostureira" target="_blank">@mariaelegancecostureira</a></p>
       </div>
     </section>
 
